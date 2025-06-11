@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Shorts Auto-Scroll</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6"/>
+        </svg>
+        <h1>Shorts Auto-Scroll</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="status-card">
+        <div class="status-indicator">
+          <div class="status-dot" id="statusDot"></div>
+          <span class="status-text" id="statusText">Checking...</span>
+        </div>
+        
+        <div class="toggle-container">
+          <label class="toggle-label">
+            <input type="checkbox" id="autoScrollToggle" class="toggle-input">
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-text">Auto-scroll enabled</span>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <h3>How it works:</h3>
+        <ul class="info-list">
+          <li>Navigate to YouTube Shorts</li>
+          <li>Enable auto-scroll above</li>
+          <li>Enjoy continuous playback</li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <button id="openShortsBtn" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+          Open YouTube Shorts
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
