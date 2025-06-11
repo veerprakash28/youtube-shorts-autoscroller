@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Shorts Auto-Scroll</title>
-  <link rel="stylesheet" href="popup.css">
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="logo">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="m6 9 6 6 6-6"/>
-        </svg>
-        <h1>Shorts Auto-Scroll</h1>
-      </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Shorts Auto-Scroll</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header with gradient background -->
+      <header class="header">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <img src="icons/logo.png" alt="Logo" class="logo-img" />
+            </div>
 
-    <main class="main">
-      <div class="status-card">
-        <div class="status-indicator">
-          <div class="status-dot" id="statusDot"></div>
-          <span class="status-text" id="statusText">Checking...</span>
+            <div class="logo-text">
+              <h1>Shorts AutoScroll</h1>
+              <p>Seamless YouTube Experience</p>
+            </div>
+          </div>
         </div>
-        
-        <div class="toggle-container">
-          <label class="toggle-label">
-            <input type="checkbox" id="autoScrollToggle" class="toggle-input">
-            <span class="toggle-slider"></span>
-          </label>
-          <span class="toggle-text">Auto-scroll enabled</span>
+      </header>
+
+      <main class="main">
+        <!-- Status Card with glassmorphism effect -->
+        <div class="status-card">
+          <div class="status-header">
+            <div class="status-indicator">
+              <div class="status-dot" id="statusDot">
+                <div class="status-pulse"></div>
+              </div>
+              <div class="status-info">
+                <span class="status-title">Extension Status</span>
+                <span class="status-text" id="statusText">Initializing...</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="toggle-section">
+            <div class="toggle-info">
+              <h3>Auto-scroll enabled</h3>
+            </div>
+            <label class="toggle-switch">
+              <input
+                type="checkbox"
+                id="autoScrollToggle"
+                class="toggle-input"
+              />
+              <span class="toggle-slider">
+                <span class="toggle-button"></span>
+              </span>
+            </label>
+          </div>
         </div>
-      </div>
 
-      <div class="info-section">
-        <h3>How it works:</h3>
-        <ul class="info-list">
-          <li>Navigate to YouTube Shorts</li>
-          <li>Enable auto-scroll above</li>
-          <li>Enjoy continuous playback</li>
-        </ul>
-      </div>
+        <!-- Action Button -->
+        <div class="actions">
+          <button id="openShortsBtn" class="btn-primary">
+            <div class="btn-icon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+            </div>
+            <span>Launch YouTube Shorts</span>
+            <div class="btn-shine"></div>
+          </button>
+        </div>
 
-      <div class="actions">
-        <button id="openShortsBtn" class="btn btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m9 18 6-6-6-6"/>
-          </svg>
-          Open YouTube Shorts
-        </button>
-      </div>
-    </main>
-  </div>
+        <div class="info-section status-card">
+          <h3>How it works:</h3>
+          <ul class="info-list">
+            <li>Navigate to YouTube Shorts</li>
+            <li>Enable auto-scroll above</li>
+            <li>Enjoy continuous playback</li>
+          </ul>
+        </div>
+      </main>
 
-  <script src="popup.js"></script>
-</body>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>Made with ❤️ for seamless YouTube experience</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
 </html>
