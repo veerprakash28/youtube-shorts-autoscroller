@@ -6,8 +6,6 @@
 
 **Seamless YouTube Shorts Experience with Automatic Scrolling**
 
-[✨ Features](#features) • [🛠️ Development](#development) • [📖 Documentation](#documentation)
-
 </div>
 
 ---
