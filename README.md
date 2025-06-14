@@ -16,6 +16,8 @@ Transform your YouTube Shorts browsing experience with intelligent auto-scrollin
 
 Perfect for background entertainment, content discovery, and productivity enthusiasts who want uninterrupted YouTube Shorts playback.
 
+![UI](icons/youtube-shorts-autoscroller.png)
+
 ## ✨ Features
 
 ### 🎯 **Core Functionality**
